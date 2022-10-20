@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="U-UA-COmpatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos Compuestos</title>
+    </head>
+    <body>
+
+        <h1>Explicacion de los elementos compuestos</h1>
+        
+        <!-- Labels / Etiquetas -->
+        <label for="Input0">Ejemplo de una entrada</label>
+        <br>
+
+        <!-- Entradas / Inputs -->
+        <input type="text" id="Input0" name="Input0">
+        <br><br>
+
+        <hr>
+        <!-- Tipos de Inputs -->
+        <h2>Input de Texto</h2>
+        <label for="Input1">Ejemplo de entrada de Texto</label><br>
+        <input type="text" id="Input1" name="Input1" maxlength="20"><br><br>
+
+        <h2>Input de numeros</h2>
+        <label for="Input2">Ejemplo de entrada numerica</label><br>
+        <input type="number" id="Input2" name="Input2"><br><br>
+
+        <h2>Input de email</h2>
+        <label for="Input3">Ejemplo de entrada de correo</label><br>
+        <input type="email" id="Input3" name="Input3" placeholder="email"><br><br>
+
+        <h2>Input de Telefono</h2>
+        <label for="Input4">Ejemplo de entrada telefonica</label><br>
+        <input type="tel" id="Input4" name="Input4" maxlength="10"><br><br>
+
+        <h2>Input de Contraseña</h2>
+        <label for="Input5">Ejemplo de entrada de contraseña</label><br>
+        <input type="password" id="Input5" name="Input5"><br><br>
+        
+        <hr>
+
+        <h2>Input de seleccion multiple</h2><br>
+        <input type="checkbox" id="topping1" value="Chisapas">
+        <label for="topping1">Helado de chispas de chocolate</label><br>
+        <input type="checkbox" id="topping2" value="nuez">
+        <label for="topping2">Helado de nuez</label><br>
+        <input type="checkbox" id="topping3" value="fresa">
+        <label for="topping3">Helado de fresa</label><br><br>
+
+        <h2>Input de seleccion unica</h2>
+        <input type="radio" id="cono" name="presentacion" value="cono">
+        <label for="cono">Helado en cono</label><br>
+        <input type="radio" id="vaso" name="presentacion" value="vaso">
+        <label for="vaso">Healdo en vaso</label><br>
+        <input type="radio" id="galleta" name="presentacion" value="galleta">
+        <label for="galleta">Helado en galleta</label><br>
+
+        <h2>Selecciona</h2>
+        <label for="helados">Sabor de helado</label>
+        <select name="helados" id="helados">
+            <option value="Vainilla">Vainilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Coco">Coco</option>
+        </select>
+
+        <h2>Select con input</h2>
+        <label for="Tamaño">Elige tu presentacion favorita</label>
+        <input list="Tamaño">
+        <datalist id="Tamaño">
+            <option value="Pequeño">Pequeño</option>
+            <option value="Mediano">Mediano</option>
+            <option value="Grande">Grande</option>
+            <option value="ExtraGrande">ExtraGrande</option>
+        </datalist>
+        <br><br>
+
+        <hr>
+
+        <h2>Input de fecha</h2><br>
+        <input type="date" id="fecha1" name="fecha1"><br>
+        <input type="datetime-local" id="fecha2" name="fecha2"><br>
+        <input type="week" id="fecha3" name="fecha3"><br>
+        <input type="time" id="fecha4" name="fecha4"><br>
+        <input type="month" id="fecha5" name="fecha5"><br>
+
+        <hr>
+
+        <h2>Input de archivo</h2><br>
+        <input type="file" id="archivo1" name="archivo1" multiple>
+
+        <h2>Input de color</h2><br><br>
+        <input type="color" id="color1" name="color1"><br><br>
+
+        <h2>Input de rango</h2>
+        <label for="cantidad">Cantidad de helados (entre 1 y 12)</label><br>
+        <input type="range" id="cantidad" name="cantidad" min="1" max="12"><br>
+
+        <hr>
+
+        <h2>Input de boton</h2>
+        <input type="reset"><br>
+        <input type="submit"><br>
+        <input type="button" id="boton1" name="boton1" value="boton1" onclick="alert('Bienvenidos a heladeria el Chaparro');"><br>
+
+        <hr>
+
+        <h2>Ejemplo de formulario</h2>
+        <form action="/action.js" id="form1" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <input type="submit" value="submit">
+            <input type="reset">
+        </form>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" form="form1">
+
+   
+    </body>
+</html>
